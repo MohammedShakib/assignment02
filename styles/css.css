@@ -72,8 +72,8 @@ body{
     gap: 50px;
 }
 .banner-title-container{
-    width: 640px;
-    height: 331px;
+    width: 40rem;
+    height: 20rem;
 }
 .banner-pic{
     max-width: 100%;
@@ -113,6 +113,7 @@ body{
         align-items: center;
         padding: 0 0;
         width: 400px;
+        margin-bottom:100px;
     }
     .nav-container{
         display: none;
@@ -136,12 +137,22 @@ body{
     .banner-container{
         flex-direction: column-reverse;
         justify-content: center;
-        margin: 0 auto;
-        width: 100%;
+        width: 300px;
     }
     .banner-title-container{
-        justify-content: center;
+        justify-items: center;
         width: 100%;
-        
+        align-items: center;
+        width: 300px;
+
     }
+    .banner-pic-container img{
+        width: 100%;
+    }
+    .banner-title{
+        font-size: 2rem;
+        margin: 0 auto;
+        align-content: center;
+    }
+
 }
