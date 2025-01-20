@@ -54,3 +54,94 @@ body{
     border-radius: 10px;
     font-size: 20px;
 }
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* banner */
+.banner-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 1158px;
+    height: 575px;
+    gap: 50px;
+}
+.banner-title-container{
+    width: 640px;
+    height: 331px;
+}
+.banner-pic{
+    max-width: 100%;
+    
+}
+.banner-title{
+    font-size: 3.5rem;
+}
+#banner-title-01{
+    color: orange;
+}
+#banner-title-02{
+    color: skyblue;
+}
+.banner-info{
+    font-size: 1.25rem;
+    color: rgba(17, 17, 17, 1);
+}
+.banner-btn{
+    width: 197px;
+    height: 50px;
+    font-size: 1.25rem;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+
+
+/* media */
+@media screen and (max-width: 430px) {
+    body{
+        margin: 0 20px;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0;
+        width: 400px;
+    }
+    .nav-container{
+        display: none;
+        flex-direction: column;
+        
+    }
+    .nav-container a{
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    .nav-logo-container h2{
+        display: none;
+    }
+    .nav-btn{
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    
+    .banner-container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .banner-title-container{
+        justify-content: center;
+        width: 100%;
+        
+    }
+}
