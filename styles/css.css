@@ -242,10 +242,11 @@ hr{
   .pagination-btn:hover {
     background-color: #ff8700;
   }
-  /* Our Stories */
+  /* Stories */
   .our-stories{
     padding:40px 20px;
     background: linear-gradient(to top, rgba(255, 155, 0, 0.15), rgba(255, 165, 0, .01));
+    width: 1160px;
     
   }
   .our-stories h2{
@@ -330,9 +331,11 @@ hr{
   .view-all:hover {
     background-color: #ec8105;
   }
+  /* footer */
   .footer{
     background-color:rgba(1, 172, 253, 1);
     color: white;
+    width: 1160px;
   }
   .footer-details{
     display: flex;
