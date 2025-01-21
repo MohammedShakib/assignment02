@@ -10,20 +10,34 @@
     <header>
         <nav class="navbar">
             <div class="nav-logo-container">
-            <img class="nav-logo" src="assets/logo.png" alt="">
-            <h2>School</h2>
+             <img class="nav-logo" src="assets/logo.png" alt="">
+             <h2>School</h2>
+             <!--hamburger button -->
+            
             </div>
             <div class="nav-container"id="menu" >
-             <a id="home" href="">Home</a>
-             <a id="about" href="">About</a>
-             <a id="facilities" href="">Facilities</a>
-             <a id="admission" href="">Admission</a>
+                <ul>
+                    <li id="home">Home</li>
+                    <li id="about">About</li>
+                    <li id="facilities">Facilities</li>
+                    <li id="admission">Admission</li>
+                </ul>
             </div>
+            <button class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <button class="nav-btn">Contact</button>
-            <div class="hamburger" onclick="toggleMenu()">
-                &#9776;
-            </div>
         </nav>
+        <!-- marquee section its challenge mark  -->
+        <div class="marquee-container">
+            <marquee behavior="scroll" direction="left">
+                📢 Admissions are now open for the 2025 academic year! Enroll your child today to secure their future. Contact us at +880-123-456789 or visit our website for more details. 🎓
+            </marquee>
+        </div>
+        <hr>
+        
     </header>
     <main>
         <section class="banner">
