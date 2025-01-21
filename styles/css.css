@@ -182,7 +182,7 @@ hr{
     text-align: center;
     margin-bottom: 5rem;
     /* border: 1px solid tomato; */
-    width: 1160px;
+    /* width: 1160px; */
 }
 .curriculum-cards{
     display: grid;
@@ -260,6 +260,7 @@ hr{
     border-radius: 50%;
     transition: background-color 0.3s ease;
     margin-top: 50px;
+    
   }
   
   .pagination-btn:hover {
