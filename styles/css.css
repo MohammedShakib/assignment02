@@ -483,7 +483,10 @@ hr{
     .curriculum-main-title{
         display: flex;
         font-size: 40px;
-        width: 410px;
+        width: 390px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
     /* .curriculum-cards{
         grid-template-columns: repeat(1,1fr);
@@ -492,7 +495,8 @@ hr{
     .curriculum-cards {
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        justify-content: center;
+        /* justify-content: center; */
+        align-items: center;
         justify-items: center;
         gap: 30px;
       }
