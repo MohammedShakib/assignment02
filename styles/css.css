@@ -47,17 +47,27 @@ body{
 #home {
     color: orange;
 }
-
+#home:hover{
+    color: black ;
+}
 #about {
     color: skyblue;
+}
+#about:hover{
+    color: black ;
 }
 
 #facilities {
     color:#05D4DF;
 }
-
+#facilities:hover{
+    color: black;
+}
 #admission {
     color: #5D58EF;
+}
+#admission:hover{
+    color: black;
 }
 
 .nav-container a{
@@ -73,6 +83,9 @@ body{
     border-radius: 10px;
     font-size: 20px;
     border: none;
+}
+.nav-btn:hover{
+    background-color: #ff8800;
 }
 hr{
     border: 1px solid orange;
@@ -150,6 +163,11 @@ hr{
     background-color: black;
     border-radius: 10px;
     margin-top: 20px;
+    transition: background-color 0.2s ease;
+    border: none;
+}
+.banner-btn:hover{
+    background-color: orange;
 }
 /* Curriculum */
 .curriculum{
@@ -237,6 +255,7 @@ hr{
     height: 60px;
     border-radius: 50%;
     transition: background-color 0.3s ease;
+    margin-top: 50px;
   }
   
   .pagination-btn:hover {
@@ -368,12 +387,16 @@ hr{
     color: white;
     margin: 8px 0px;
   }
+  .about-school a:hover{
+    color: black;
+  }
   .keep-touch h3{
     margin-bottom: 25px;
   }
   .keep-touch a{
     margin-right: 8px;
   }
+  
 /* media */
 @media screen and (max-width: 576px) {
     body{
