@@ -7,163 +7,187 @@
     <link rel="stylesheet" href="styles/css.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar for-margin ">
-            <div class="nav-logo-container">
-             <img class="nav-logo" src="assets/logo.png" alt="">
-             <h2>School</h2>
-             <!--hamburger button -->
+    <body class="quicksand-font">
+        <header class="container">
+            <nav>
+                <!-- school logo and  name section  -->
+                <div class="nav-school-logo">
+                    <img src="assets/logo.png" alt="school logo">
+                    <h2 id="nav-school-text">SCHOOL</h2>
+                </div>
+    
+                <!--hamburger button -->
+                <button class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+                <!-- menu section -->
+                <div class="nav-menu">
+                    <ul>
+                        <li id="orange">Home</li>
+                        <li id="sky-blue">About</li>
+                        <li id="blue-white">Facilities</li>
+                        <li id="purple">Admission</li>
+                    </ul>
+                </div>
+    
+                <!-- contact button  -->
+                <div class="nav-contact">
+                    <button class="nav-btn-contact">Contact</button>
+                </div>
+            </nav>
             
+    
+            <!-- marquee section its challenge mark  -->
+            <div class="marquee-container">
+                <marquee behavior="scroll" direction="left">
+                    Unlock your child's potential with a world-class education. Enroll now and secure a bright future for them! 📞 Contact us at +8801874126156 🌐 Visit our website for more details.🎓 Shape their tomorrow, today!
+                </marquee>
             </div>
-            <div class="nav-container"id="menu" >
-                <ul>
-                    <li id="home">Home</li>
-                    <li id="about">About</li>
-                    <li id="facilities">Facilities</li>
-                    <li id="admission">Admission</li>
-                </ul>
-            </div>
-            <button class="hamburger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <button class="nav-btn">Contact</button>
-        </nav>
-        <!-- marquee section its challenge mark  -->
-        <div class="marquee-container for-margin">
-            <marquee behavior="scroll" direction="left">
-                Unlock your child's potential with a world-class education. Enroll now and secure a bright future for them! 📞 Contact us at +880-1874146156 ,🌐 Visit our website for more details.🎓 Shape their tomorrow, today!
-            </marquee>
-        </div>
-        <hr>
-        
-    </header>
-    <main>
-        <section class="banner for-margin">
-            <div class="banner-container">
-                <div class="banner-title-container">
-                    <h1 class="banner-title"><span id="banner-title-01">Empowering <br> </span> students from small <br> age <span id="banner-title-02">towards vision</span></h1>
-                    <p class="banner-info">With the courage, Confidence, Creativity and Compassion to make their Unique Contribution in a Diverse and Dynamic World.</p>
-                    <button class="banner-btn">Enroll Now</button>
+            <hr>
+            <!-- header section part start -->
+            <section>
+    
+                <!-- text part  -->
+                <div class="header-section-div1">
+                    <div class="header-section-title"><p><span id="orange">Empowering </span><br>students from small age <br><span id="sky-blue">towards vision</span></p></div>
+                    <div class="header-section-description">With the courage, Confidence, Creativity and Compassion to make their Unique Contribution in a Diverse and Dynamic World.</div>
+                    <div class="header-section-button">
+                        <button>Enroll Now</button>
+                    </div>
                 </div>
-                <div class="banner-pic-container">
-                    <img class="banner-pic" src="assets/hero-kids.png" alt="">
+    
+                <!-- image part  -->
+                <div class="header-section-div2">
+                    <img src="assets/hero-kids.png" alt="kids picture">
                 </div>
-            </div>
-        </section>
-        <section class="curriculum">
-            <h1 class="curriculum-main-title for-margin">Standard Curriculum</h1>
-            <div class="curriculum-cards for-margin">
-                <div id="card01" class="curriculum-card">
-                    <img  src="assets/kinder.png" alt="">
-                    <h3 class="curriculum-title">Kinder (3-6) Years</h3>
-                    <p class="curriculum-info">Cum sociis natoque penatibus et magnis
-                        dis parturient montes, nascetur ridiculus
-                        mu sdis parturient</p>
-                    <a id="sky-blue" href="">Read More</a>
+            </section>
+            <!-- header section part end  -->
+        </header>
+    
+        <!-- main section start  -->
+        <section class="curriculum-section">
+            <h2 class="section-title">Standard Curriculum</h2>
+            <div class="curriculum-cards">
+                <!-- Kinder Card -->
+                <div class="curriculum-card color1">
+                    <div class="card-image">
+                        <img src="assets/kinder.png" alt="Kinder">
+                    </div>
+                    <h3 class="card-title">Kinder (3-6) Years</h3>
+                    <p class="card-description">
+                        Focuses on basic literacy, numeracy, and introduction to core subjects like science, math, and language.
+                    </p>
+                    <a href="#" class="card-link" id="sky-blue">Read More</a>
                 </div>
-                <div id="card02" class="curriculum-card">
-                    <img  src="assets/elementary.png" alt="">
-                    <h3 class="curriculum-title">Elementary School</h3>
-                    <p class="curriculum-info">Cum sociis natoque penatibus et magnis
-                        dis parturient montes, nascetur ridiculus
-                        mu sdis parturient</p>
-                    <a id="orange" href="">Read More</a>
+    
+                <!-- Elementary Card -->
+                <div class="curriculum-card color2">
+                    <div class="card-image">
+                        <img src="assets/elementary.png" alt="Elementary">
+                    </div>
+                    <h3 class="card-title">Elementary School</h3>
+                    <p class="card-description">
+                        Builds on primary education, emphasizing critical thinking, problem-solving, and preparation for higher education or vocational training.
+                    </p>
+                    <a href="#" class="card-link" id="orange">Read More</a>
                 </div>
-                <div id="card03" class="curriculum-card">
-                    <img  src="assets/middle.png" alt="">
-                    <h3 class="curriculum-title">Middle (10-16) Years</h3>
-                    <p class="curriculum-info">Cum sociis natoque penatibus et magnis
-                        dis parturient montes, nascetur ridiculus
-                        mu sdis parturient</p>
-                    <a id="purple" href="">Read More</a>
+    
+                <!-- Middle Card -->
+                <div class="curriculum-card color3">
+                    <div class="card-image">
+                        <img src="assets/middle.png" alt="Middle">
+                    </div>
+                    <h3 class="card-title">Middle (10-16) Years</h3>
+                    <p class="card-description">
+                        Specializes in specific fields of study, fostering expertise, research, and professional skills for career advancement.
+                    </p>
+                    <a href="#" class="card-link" id="purple">Read More</a>
                 </div>
             </div>
+    
             <!-- Pagination Buttons -->
-        <div class="pagination">
-            <button class="pagination-btn">❮</button>
-            <button class="pagination-btn">❯</button>
-        </div>
+            <div class="pagination">
+                <button class="pagination-btn">❮</button>
+                <button class="pagination-btn">❯</button>
+            </div>
         </section>
         <!-- stories part  -->
-    <section class="our-stories">
-        <h2>Our Stories</h2>
-        <div class="stories-grid">
-            <!-- Large Card -->
-            <div class="story-card large">
-                <img src="assets/story-1.png" alt="Story Image">
-                <div class="story-content">
-                    <div class="date-section"><span class="date date-large">January 19, 2025</span></div>
-                    
-                    <h3>A fun toddler coloring training on classroom</h3>
-                    <p>Beautiful branding for changes by Never Now in Australia. Changes is a platform for open discussion in an inclusive and collaborative environment.Beautiful branding for changes by Never Now in Australia.
-                        changes is a platform for open discussion in an inclusive and
-                        collaborative environment, providing the...Beautiful branding for changes by Never Now in Australia.
-                        changes is a platform for open discussion in an inclusive and
-                        collaborative environment, providing the...Beautiful branding for changes by Never Now in Australia.
-                        changes is a platform for open discussion in an inclusive and
-                        collaborative environment, providing the...</p>
+        <section class="our-stories">
+            <h2>Our Stories</h2>
+            <div class="stories-grid">
+                <!-- Large Card -->
+                <div class="story-card large">
+                    <img src="assets/story-1.png" alt="Story Image">
+                    <div class="story-content">
+                        <div class="date-section"><span class="date date-large">January 19, 2025</span></div>
+                        
+                        <h3>A fun toddler coloring training on classroom</h3>
+                        <p>Beautiful branding for changes by Never Now in Australia. Changes is a platform for open discussion in an inclusive and collaborative environment.</p>
+                    </div>
+                </div>
+                <!-- Smaller Cards -->
+                <div class="story-card">
+                    <img src="assets/story-2.png" alt="Story Image">
+                    <div class="story-content">
+                        <div class="date-section"><span class="date">January 19, 2025</span></div>
+                        <h3>Find out if a school fits the family's needs</h3>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <img src="assets/story-3.png" alt="Story Image">
+                    <div class="story-content">
+                        <div class="date-section"><span class="date">January 19, 2025</span></div>
+                        <h3>Summer math & literacy centres for kids</h3>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <img src="assets/story-4.png" alt="Story Image">
+                    <div class="story-content">
+                        <div class="date-section"><span class="date">January 19, 2025</span></div>
+                        <h3>Classroom management techniques for new tutors</h3>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <img src="assets/story-5.png" alt="Story Image">
+                    <div class="story-content">
+                        <div class="date-section"><span class="date">January 19, 2025</span></div>
+                        <h3>Conversation rhymes improve kids listening</h3>
+                    </div>
                 </div>
             </div>
-            <!-- Smaller Cards -->
-            <div class="story-card">
-                <img src="assets/story-2.png" alt="Story Image">
-                <div class="story-content">
-                    <div class="date-section"><span class="date">January 19, 2025</span></div>
-                    <h3>Find out if a school fits the family's needs</h3>
+            <button class="view-all">View All</button>
+        </section>
+    
+        <!-- footer section -->
+         <footer class="footer">
+            <div class="footer-details">
+                <div class="kids-education">
+                    <div class="kids-education-logo">
+                        <img src="assets/logo.png" alt="">
+                        <h1>Kids <br>Education</h1>
+                    </div>
+                    <div class="kids-education-details">Our mission is to provide world-class education that meets global standards.
+                        We aim to tailor learning experiences to the unique needs of every child.
+                        Our focus is on fostering academic excellence and critical thinking.</div>
+                </div>
+                <div class="about-school">
+                    <h3>About School</h3>
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Facilities</a>
+                    <a href="">Admission</a>
+                </div>
+                <div class="keep-in-touch">
+                    <h3>Keep In Touch</h3>
+                    <a href=""><img src="assets/fb.png" alt=""></a>
+                    <a href=""><img src="assets/dribble.png" alt=""></a>
+                    <a href=""><img src="assets/twitter.png" alt=""></a>
+                    <a href=""><img src="assets/google+.png" alt=""></a>
                 </div>
             </div>
-            <div class="story-card">
-                <img src="assets/story-3.png" alt="Story Image">
-                <div class="story-content">
-                    <div class="date-section"><span class="date">January 19, 2025</span></div>
-                    <h3>Summer math & literacy centres for kids</h3>
-                </div>
-            </div>
-            <div class="story-card">
-                <img src="assets/story-4.png" alt="Story Image">
-                <div class="story-content">
-                    <div class="date-section"><span class="date">January 19, 2025</span></div>
-                    <h3>Classroom management techniques for new tutors</h3>
-                </div>
-            </div>
-            <div class="story-card">
-                <img src="assets/story-5.png" alt="Story Image">
-                <div class="story-content">
-                    <div class="date-section"><span class="date">January 19, 2025</span></div>
-                    <h3>Conversation rhymes improve kids listening</h3>
-                </div>
-            </div>
-        </div>
-        <button class="view-all">View All</button>
-    </section>
-    </main>
-    <footer class="footer">
-        <div class="footer-details">
-            <div class="kids-education">
-                <div class="kids-education-logo">
-                    <img src="assets/logo.png" alt="">
-                    <h1>Kids <br>Education</h1>
-                </div>
-                <div class="kids-education-details">Our vision is to inspire every student to reach their highest potential by providing a dynamic and inclusive learning environment. We are committed to fostering creativity, critical thinking, and resilience, ensuring that every child feels valued and supported.
-                </div>
-            </div>
-            <div class="about-school">
-                <h3>About School</h3>
-                <a  href="">Home</a>
-                <a  href="">About</a>
-                <a  href="">Facilities</a>
-                <a  href="">Admission</a>
-            </div>
-            <div class="keep-touch">
-                <h3>Keep In Touch</h3>
-                <a href=""><img src="assets/fb.png" alt=""></a>
-                <a href=""><img src="assets/dribble.png" alt=""></a>
-                <a href=""><img src="assets/twitter.png" alt=""></a>
-                <a href=""><img src="assets/google+.png" alt=""></a>
-            </div>
-        </div>
-    </footer>
+         </footer>
 </body>
 </html>

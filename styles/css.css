@@ -1,237 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* font added  */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
 
-/* Shared */
+/* fix desktop margin and padding */
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-/* body{
-    margin: 20px 100px;
-} */
- .for-margin{
-    margin: 20px 100px;
- }
-.story-btn{
-    width: 174px;
-    height: 48px;
-    border-radius: 20px;
-    border: none;
-    margin-left: 50px;
-    margin-top: -100px;
-  }
-/* navbar */
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    width: 72rem;
-    height: 3.8rem;
-    align-items: center;
-    
-}
-.navbar img{
-    width: 62px;
-    height: 62px;
-}
-.nav-logo-container{
-    display: flex;
-    font-size: 2rem;
-    align-items: center;
-}
-.nav-container {
-    list-style: none;
-    padding: 0;
-   margin: 0;
-}
-.nav-container li{
-    display: inline-block;
-    margin-right: 32px;
-    font-weight: 600 ;
-  }
-#home {
-    color: orange;
-}
-#home:hover{
-    color: black ;
-}
-#about {
-    color: skyblue;
-}
-#about:hover{
-    color: black ;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#facilities {
-    color:#05D4DF;
-}
-#facilities:hover{
-    color: black;
-}
-#admission {
-    color: #5D58EF;
-}
-#admission:hover{
-    color: black;
+/* body  element*/
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
 }
 
-.nav-container a{
-    text-decoration: none;
-    font-size: 1.25rem;
-    margin: 0 15px;
-}
-.nav-btn{
-    width: 197px;
-    height: 50px;
-    background-color: orange;
-    color: white;
-    border-radius: 10px;
-    font-size: 20px;
-    border: none;
-}
-.nav-btn:hover{
-    background-color: #ff8800;
-}
-hr{
-    border: 1px solid orange;
-    margin-top: 10px;
-    display:none;
-  }
-  /* marquee section  */
-.marquee-container {
-    background-color: white;
-    padding: 10px;
-    border: 1px solid white;
-    font-size: 18px;
-    font-weight: 900;
-    color: #333;
-    width: 1160px;
-}  
-.hamburger-menu {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    z-index: 200;
-  }
-  .hamburger-menu span {
-    width: 100%;
-    height: 3px;
-    background-color: black;
-    transition: all 0.3s linear;
-  }
-
-/* banner */
-.banner{
-    margin-bottom: 60px;
-}
-.banner-container{
-    margin-top: 20px;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    width: 1158px;
-    height: 575px;
-    gap: 50px;
-}
-.banner-title-container{
-    width: 40rem;
-    height: 20rem;
-}
-.banner-pic{
-    max-width: 100%;
-    
-}
-.banner-title{
-    font-size: 3.5rem;
-}
-#banner-title-01{
-    color: orange;
-}
-#banner-title-02{
-    color: skyblue;
-}
-.banner-info{
-    font-size: 1.25rem;
-    color: rgba(17, 17, 17, 1);
-}
-.banner-btn{
-    width: 197px;
-    height: 50px;
-    font-size: 1.25rem;
-    color: white;
-    background-color: black;
-    border-radius: 10px;
-    margin-top: 20px;
-    transition: background-color 0.2s ease;
-    border: none;
-}
-.banner-btn:hover{
-    background-color: orange;
-}
-/* Curriculum */
-.curriculum{
-    background-image: url("../assets/bg.png");
-}
-.curriculum-main-title, .pagination{
-    font-size: 2.8rem;
-    text-align: center;
-    margin-bottom: 5rem;
-    /* border: 1px solid tomato; */
-    /* width: 1160px; */
-}
-.curriculum-cards{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-
-}
-.curriculum-card{
-    width: 22.8rem;
-    height: 29.75rem;
-    margin-right: 28.29px;
-    text-align: center;
-    /* border: 1px solid tomato; */
-    border-radius: 15px;
-    transition: transform 0.3s ease;
-    padding: 1.5rem 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-}
-.curriculum-card:hover {
-    transform: translateY(-10px);
-  }
-.curriculum-card img{
-    margin-bottom: 32px;
-    margin-top: 52px;
+/* Container for all header content*/
+.container {
+  padding: 20px 40px;
+  max-width: 100%;
 }
 
-#card01{
-    background: linear-gradient(to bottom, rgba(222, 245, 255, 1), rgba(222, 245, 255, 0.1));
-  }
-#card02{
-    background: linear-gradient(to bottom, rgba(255, 244, 220, 1), rgba(255, 244, 220, 0.09));
-  }
-#card03{
-    background: linear-gradient(to bottom, rgba(242, 232, 255, 1), rgba(242, 232, 255, .001));
-  }
-  
-.curriculum-title{
-    font-size: 24px;
-    margin-bottom: 33px;
-}
-.curriculum-info{
-    font-size: 15px;
-    color: rgba(128, 128, 128, 1);
-    margin-bottom: 33px;
-}
-.curriculum-card a{
-    text-decoration: none;
-    font-weight: bold;
-}
+/* color  */
 #sky-blue{
     color: skyblue;
 }
@@ -250,354 +48,509 @@ hr{
 #purple:hover{
     color: rgb(180, 18, 255);
 }
-.pagination-btn {
-    background-color: #ffa500;
-    border: none;
-    color: #fff;
-    font-size: 1.2rem;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
-    margin-top: 50px;
-    
-  }
-  
-  .pagination-btn:hover {
+
+/* navbar section  */
+nav{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.nav-school-logo{
+  display: flex;
+  align-items: center;
+}
+.nav-school-logo img{
+  width: 50px;
+  height: 50px;
+}
+
+/* hamburger section  */
+.hamburger-menu {
+  display: none;  /* Desktop e hide thakbe */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 200;
+}
+.hamburger-menu span {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  transition: all 0.3s linear;
+}
+.nav-menu{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-menu li{
+  display: inline-block;
+  margin-right: 32px;
+  font-weight: 600 ;
+}
+.nav-btn-contact{
+  border: none;
+  background-color: orange;
+  color: white;
+  padding: 10px 60px;
+  border-radius: 10px;
+  width: 197px;
+  height: 50px;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+.nav-btn-contact:hover{
     background-color: #ff8700;
+}
+hr{
+  border: 1px solid orange;
+  margin-top: 10px;
+  display:none;
+
+}
+
+
+/* marquee section  */
+.marquee-container {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid white;
+  font-size: 18px;
+  font-weight: 900;
+  color: #333;
+}
+
+
+/* header section title  */
+header section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.header-section-div1{
+  padding: 0px 20px 0px 0px;  
+}
+.header-section-div2 {
+  max-width: 50%;
+}
+.header-section-div2 img {
+  max-width: 100%;
+  height: auto;
+  display: block; 
+}
+.header-section-title{
+  font-size: 56px;
+  font-weight: 900;
+}
+.header-section-button button{
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 40px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: larger;
+  transition: background-color 0.3s ease;
+}
+.header-section-button button:hover{
+    background-color: #ff8700;
+}
+
+/* main section start  */
+.curriculum-section {
+  background-image: url("../assets/bg.png");
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.curriculum-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.curriculum-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.curriculum-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-image img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.card-link {
+  font-size: 0.9rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.color1{
+  background: linear-gradient(to bottom, rgba(222, 245, 255, 1), rgba(222, 245, 255, 0.1));
+}
+.color2{
+  background: linear-gradient(to bottom, rgba(255, 244, 220, 1), rgba(255, 244, 220, 0.09));
+}
+.color3{
+  background: linear-gradient(to bottom, rgba(242, 232, 255, 1), rgba(242, 232, 255, .001));
+}
+
+.pagination {
+  margin-top: 30px;
+}
+
+.pagination-btn {
+  background-color: #ffa500;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 0px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-btn:hover {
+  background-color: #ff8700;
+}
+
+
+/* our stories section  */
+.our-stories{
+  padding:40px 20px;
+  background: linear-gradient(to top, rgba(255, 155, 0, 0.15), rgba(255, 165, 0, .01));
+}
+.our-stories h2{
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+.stories-grid{
+  background-image: url("../assets/bg.png");
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  margin: 10px;
+}
+.large{
+  grid-row: span 2; 
+  display: flex;
+  flex-direction: column;
+}
+
+.story-card{
+  border-radius: 10px;
+  box-shadow:0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+.story-card:hover {
+  transform: translateY(-8px);
+}
+
+.story-card img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.story-content{
+  padding: 20px;
+}
+.large img{
+  height: 70%;
+}
+.date{
+  background-color: #95B226;
+  color: white;
+  padding: 10px 30px;
+  margin-bottom: 0px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.date-large{
+  background-color: #3CD8E8;
+}
+.date-section{
+  margin-top: -33px;
+  margin-left: 20px;
+}
+
+.story-content h3{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.story-content p{
+  font-size: larger;
+}
+
+/* View All Button */
+.view-all {
+  display: block;
+  margin: 30px auto 0;
+  padding: 10px 40px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.view-all:hover {
+    background-color: #ff8700;
+}
+
+/* footer section  */
+.footer{
+  background-color: #01ACFD;
+  color: white;
+}
+.footer-details{
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 80px;
+}
+.kids-education{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+.kids-education-logo{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.kids-education-logo img{
+  background-color: white;
+  margin-right: 20px;
+}
+.about-school{
+  display: flex;
+  flex-direction: column;
+}
+.about-school h3{
+  margin-bottom: 20px;
+}
+.about-school a{
+  text-decoration: none;
+  color: white;
+  margin: 8px 0px;
+}
+.about-school a:hover{
+    color: #000;
+}
+.keep-in-touch h3{
+  margin-bottom: 25px;
+}
+.keep-in-touch a{
+  margin-right: 8px;
+}
+
+@media screen and (max-width:576px) {
+  body{
+    margin: 10px 0;    
+    padding: 0 20px;  
   }
-  /* Stories */
-  .our-stories{
-    padding:40px 20px;
-    background: linear-gradient(to top, rgba(255, 155, 0, 0.15), rgba(255, 165, 0, .01));
-    /* width: 1160px; */
-    
+  .container {
+    padding: 10px 20px;
   }
-  .our-stories h2{
+   #nav-school-text{
+    display: none;
+   }
+  .hamburger-menu {
+    display: flex;  
+  }
+
+  .nav-menu, .nav-contact {
+    display: none;  
+  }
+
+  nav.active .nav-menu {
+    display: block;
+  }
+  hr{
+    border: 1px solid orange;
+    margin-top: 10px;
+    display:flex ;
+  }
+
+
+  header section{
+    flex-direction: column;
+    padding: 0;
+  }
+  .header-section-div2{
+    order: 1;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;  
+  }
+  .header-section-div1{
+    order: 2;
+    justify-content: center;
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 2rem;
+    padding: 0;
+  } 
+  .header-section-title{
+    font-size: 30px;
+    font-weight: 900;
   }
-  .stories-grid{
-    background-image: url("../assets/bg.png");
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
-    margin: 10px;
-  }
-  .large{
-    grid-row: span 2; 
-    display: flex;
-    flex-direction: column;width: 500px;
-  }
-  .story-card{
-    border-radius: 10px;
-    box-shadow:0px 4px 8px rgba(0, 0, 0, 0.1);
+
+
+
+  /* curriculum section  */
+
+  .curriculum-section{
+    background-image: url("../assets/bg.png"); 
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease;
   }
-  .story-card:hover {
-    transform: translateY(-8px);
+  .curriculum-cards{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
   }
-  
-  .story-card img{
+  .curriculum-card:hover {
+    transform: none
+  }
+  .pagination{
+    display: none;
+  }
+
+  /* Our Stories section */
+  .our-stories {
+    padding: 20px 10px;
+  }
+
+  .our-stories h2 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+
+  .stories-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+    margin: 0;
+  }
+
+  .story-card {
     width: 100%;
-    height: auto;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .story-card img {
+    width: 100%;
+    height: 100px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
   }
-  
-  .story-content{
-    padding: 20px;
+
+  .story-content {
+    padding: 10px;
   }
-  
-  .date{
-    background-color: #95B226;
-    color: white;
-    padding: 10px 30px;
-    margin-bottom: 0px;
-    border-radius: 50px;
-    font-size: 1.2rem;
-    font-weight: 500;
+
+  .story-content h3 {
+    margin: 15px 0;
+    font-size: 0.9rem; 
+    line-height: 1.3;
   }
-  .date-large{
-    background-color: #3CD8E8;
+
+  .date-section {
+    margin-top: -20px;
+    margin-left: 10px;
   }
-  .date-section{
-    margin-top: -33px;
-    margin-left: 20px;
+
+  .date {
+    padding: 5px 15px;
+    font-size: 0.7rem;
   }
-  
-  .story-content h3{
-    margin-top: 40px;
-    margin-bottom: 40px;
+
+  /* Hide the large card */
+  .large {
+    display: none;
   }
-  .story-content p{
-    font-size: larger;
-  }
-  
-  /* View All Button */
+
+  /* View All button */
   .view-all {
-    display: block;
-    margin: 30px auto 0;
-    padding: 10px 40px;
-    background-color: #000;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 1rem;
-    text-align: center;
-    transition: background-color 0.3s ease;
-    margin-bottom: 30px;
+    margin: 20px auto;
+    padding: 8px 30px;
+    font-size: 0.9rem;
+    width: 120px;
   }
-  
-  .view-all:hover {
-    background-color: #ec8105;
-  }
-  /* footer */
-  .footer{
-    background-color:rgba(1, 172, 253, 1);
-    color: white;
-    /* width: 1160px; */
+
+
+  /* footer section  */
+  .footer-details{
+    padding: 50px 30px;
+    margin: 0px 0px;
   }
   .footer-details{
     display: flex;
-    justify-content: space-between;
-    padding: 100px 80px;
+    flex-direction: column;
   }
   .kids-education{
-    display: flex;
-    flex-direction: column;
-    width: 35%;
-  }
-  .kids-education-logo{
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  .kids-education-logo img{
-    background-color: white;
-    margin-right: 20px;
+    height: auto;
+    width: auto;
+    margin-bottom: 30px;
   }
   .about-school{
-    display: flex;
-    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
   .about-school h3{
-    margin-bottom: 20px;
+    font-size: 1.5rem;
   }
-  .about-school a{
-    text-decoration: none;
-    color: white;
-    margin: 8px 0px;
+  .keep-in-touch h3{
+    font-size: 1.5rem;
   }
-  .about-school a:hover{
-    color: black;
-  }
-  .keep-touch h3{
-    margin-bottom: 25px;
-  }
-  .keep-touch a{
-    margin-right: 8px;
-  }
-  
-/* media */
-@media screen and (max-width: 450px) {
-    body{
-        margin: 0 20px;
-    }
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 390px;
-        margin-bottom:20px;
-        padding: 10px;
-    }
-    .for-margin{
-        margin: 20px 0px;
-    }
-    .nav-container {
-        display: none; /* Initially hidden */
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: white;
-        width: 100%;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        text-align: center;
-    }
-    .nav-container a{
-        text-decoration: none;
-        font-size: 1rem;
-    }
-    .nav-logo-container h2{
-        display: none;
-    }
-    .nav-btn{
-        display: none;
-    }
-    hr{
-        border: 1px solid orange;
-        display:flex ;
-        margin-bottom: 50px;
-        width: 390px;
-      }
-    .hamburger-menu {
-        display: flex;
-        justify-content: space-around;
-      }
-    .marquee-container{
-        width: 400px;
-      }
-    .banner-container{
-        flex-direction: column-reverse;
-        justify-content: center;
-        width: 400px;
-    }
-    .banner-title-container{
-        justify-items: center;
-        width: 100%;
-        align-items: center;
-        text-align: center;
-        /* width: 400px; */
-
-    }
-    .banner-pic-container img{
-        width: 100%;
-        margin-top: 120px;
-    
-    }
-    .banner-title{
-        font-size: 2rem;
-        margin: 0 auto;
-        align-items: center;
-        text-align: center;
-    }
-    
-    /* curriculum */
-    .curriculum{
-        margin-top: 250px;
-        /* border: 1px solid tomato; */
-        text-align: center;
-        background-image: url("../assets/bg.png");
-        padding-left: 10px;
-    }
-    .curriculum-main-title{
-        display: flex;
-        font-size: 40px;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto 20px auto;
-        /* text-align: center; */
-    }
-
-    .curriculum-cards {
-        display: grid;
-        grid-template-columns: 1fr;
-        /* justify-content: center; */
-        /* align-items: center; */
-        justify-items: center;
-        gap: 20px;
-      }
-      .curriculum-card {
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        margin-left: 40px;
-        width: 90%;
-        max-width: 350px;
-        text-align: center;
-        transition: transform 0.3s ease;
-      }
-      .pagination{
-        display: none;
-      }
-      .our-stories{
-        /* padding:40px 20px; */
-        background: linear-gradient(to top, rgba(255, 155, 0, 0.15), rgba(255, 165, 0, .01));
-        width: 410px;
-      }
-      .stories-grid{
-        background-image: url("../assets/bg.png");
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 20px;
-        margin: 10px;
-      }
-      .story-card {
-        width: 100%;
-        margin-bottom: 10px;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-      }
-      .story-card img {
-        width: 100%;
-        height: 100px;
-        object-fit: cover;
-        border-radius: 10px 10px 0 0;
-      }
-      .story-content {
-        padding: 10px;
-      }
-    
-      .story-content h3 {
-        margin: 15px 0;
-        font-size: 0.9rem; 
-        line-height: 1.3;
-      }
-    
-      .date-section {
-        margin-top: -20px;
-        margin-left: 10px;
-      }
-    
-      .date {
-        padding: 5px 15px;
-        font-size: 0.7rem;
-      }
-      .large {
-        display: none;
-      }
-      .view-all {
-        margin: 20px auto;
-        padding: 8px 30px;
-        font-size: 0.9rem;
-        width: 120px;
-      }
-      /* footer */
-      .footer{
-        width: 410px;
-      }
-      .footer-details{
-        padding: 50px 30px;
-        margin: 0px 0px;
-      }
-      .footer-details{
-        display: flex;
-        flex-direction: column;
-        width: 390px;
-      }
-      .kids-education-details{
-        width: 390px;
-      }
-      .kids-education{
-        height: auto;
-        width: auto;
-        margin-bottom: 30px;
-      }
-      .about-school{
-        margin-top: 10px;
-        margin-bottom: 30px;
-      }
-      .about-school h3{
-        font-size: 1.5rem;
-      }
-      .keep-touch h3{
-        font-size: 1.5rem;
-      }
-      
-     
 }
