@@ -6,9 +6,12 @@
     padding: 0;
     box-sizing: border-box;
   }
-body{
-    margin: 20px 140px;
-}
+/* body{
+    margin: 20px 100px;
+} */
+ .for-margin{
+    margin: 20px 100px;
+ }
 .story-btn{
     width: 174px;
     height: 48px;
@@ -24,6 +27,7 @@ body{
     width: 72rem;
     height: 3.8rem;
     align-items: center;
+    
 }
 .navbar img{
     width: 62px;
@@ -265,7 +269,7 @@ hr{
   .our-stories{
     padding:40px 20px;
     background: linear-gradient(to top, rgba(255, 155, 0, 0.15), rgba(255, 165, 0, .01));
-    width: 1160px;
+    /* width: 1160px; */
     
   }
   .our-stories h2{
@@ -354,7 +358,7 @@ hr{
   .footer{
     background-color:rgba(1, 172, 253, 1);
     color: white;
-    width: 1160px;
+    /* width: 1160px; */
   }
   .footer-details{
     display: flex;
